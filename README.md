@@ -35,4 +35,4 @@ This project classifies resumes into predefined job categories using NLP techniq
 git clone https://github.com/yourusername/resume-classification-streamlit.git
 cd resume-classification-streamlit
 pip install -r requirements.txt
-streamlit run app.py
+streamlit run resume_classifi_svm.py
