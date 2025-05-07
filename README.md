@@ -1,19 +1,15 @@
-Markdown
-### 📝 `README.md` Content:
-
-```markdown
 # 📄 Resume Classification using Machine Learning
 
 This project classifies resumes into predefined job categories using NLP techniques and displays results through a **Streamlit** interface.
 
 ## 🚀 Features
-- Text extraction and preprocessing from resumes
+- Text extraction and preprocessing from resumes (PDF)
 - TF-IDF vectorization
-- Machine Learning classification
-- Interactive Streamlit UI
+- Machine Learning classification (SVM)
+- Interactive Streamlit UI with support for scanned PDFs using OCR
 
 ## 🧠 Machine Learning
-- **Model Used**: Logistic Regression / SVM / Random Forest (your choice)
+- **Model Used**: Support Vector Machine (SVM)
 - **Vectorization**: TF-IDF
 - **Categories**: Data Science, Web Developer, HR, etc.
 - **Dataset**: Based on labeled resume samples
@@ -24,15 +20,22 @@ This project classifies resumes into predefined job categories using NLP techniq
 - Pandas
 - Numpy
 - Streamlit
-- pdfminer / docx2txt (for parsing)
+- PyMuPDF (for text-based PDFs)
+- pytesseract + pdf2image (for scanned PDFs)
 
 ## 📷 Demo
-![{7639875D-0FF4-4603-B70E-B4F0B39AC825}](https://github.com/user-attachments/assets/b820b430-3814-4a0e-8aa4-0df00b5133a1)
+![{1EB65C7E-D5BB-438E-AC27-BA905F2282B1}](https://github.com/user-attachments/assets/60eb32a4-5d53-4a1a-b6b9-cd78215eac2a)
  <!-- Add a screenshot in a 'screenshots' folder -->
 
 ## ▶️ Run Locally
+
 ```bash
+# Clone the repository
 git clone https://github.com/yourusername/resume-classification-streamlit.git
 cd resume-classification-streamlit
+
+# Install dependencies
 pip install -r requirements.txt
-streamlit run resume_classifi_svm.py
+
+# Run the Streamlit app
+streamlit run app.py
